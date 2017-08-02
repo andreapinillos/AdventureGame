@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<script>
+var user = prompt("You are walking your dog and all of a sudden an alien comes out from around the corner! Do you FIGHT it, RUN from it, or TALK to it?").toUpperCase();
+
+switch(user) {
+    case 'FIGHT':
+        var strong = prompt("Are you strong enough to fight? Answer YES or NO.").toUpperCase();
+        var smart = prompt("Are you able to out smart the alien? (YES or NO)").toUpperCase();
+        if(strong === 'YES' || smart === 'YES') {
+        document.write("Super! you are able to defeat the alien!");
+        }else {
+            document.write("If you are neither than I am sorry but you lose and die");
+        }
+        break;
+    case 'RUN':
+        var fast = prompt("Are you faster than the alien to run from it? (YES or NO)").toUpperCase();
+        var headStart = prompt("Were you able to get a head start? (YES or NO)").toUpperCase();
+        if(fast === 'YES' && headStart === 'YES') {
+            document.write("Good! because you will need speed and a head start if you want to beat the alien!");
+        }else {
+            document.write("sorry but you need both speed and a head start to beat the alien! you lose and die");
+        }
+        break;
+        case 'TALK':
+            var negotiate = prompt("are your negotiation skills up to par? (YES or NO)").toUpperCase();
+            var sweetTalk = prompt("are you able to find out where he came from and if he means any harm? (YES or NO)").toUpperCase();
+            if(negotiate === 'YES'|| sweetTalk === 'YES') {
+                document.write("at least one of your communication skills are up to par, you get away and make a new friend!");
+            }else {
+                document.write("get your communication skills checked, you are too afraid to talk!");
+            }
+    break;
+    default:
+        document.write("you are not typing one of the three options, please try again.");
+}
+
+</script>
+    </body>
+</html>
